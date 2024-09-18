@@ -368,3 +368,6 @@ results_skfold = cross_val_score(model_skfold, train_X, train_y, cv=skfold)
 
 print("Accuracy: %.2f%%" %(results_skfold.mean()*100.0))
 
+if __name__ == "__main__":
+	
+	app.run(host='0.0.0.0', port=9000, debug=True)
